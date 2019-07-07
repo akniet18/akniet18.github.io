@@ -32,12 +32,12 @@
 						<i class="fas fa-times fa-2x" onclick="show_nav()" style="color: #6E0000"></i>
 					</div>
 					<div class="bars_items">
-						<div class="bars_item"><a href="#top">ГЛАВНАЯ</a></div>
-						<div class="bars_item"><a href="#work">РАБОТЫ</a></div>
-						<div class="bars_item"><a href="#a_me">ОБО МНЕ</a></div>
-						<div class="bars_item"><a href="#con">Контакты</a></div>
+						<div class="bars_item"><a onclick="show_nav()" href="#top">ГЛАВНАЯ</a></div>
+						<div class="bars_item"><a onclick="show_nav()" href="#work">РАБОТЫ</a></div>
+						<div class="bars_item"><a onclick="show_nav()" href="#a_me">ОБО МНЕ</a></div>
+						<div class="bars_item"><a onclick="show_nav()" href="#con">Контакты</a></div>
 					</div>	
-				</div>			
+				</div>	
 			</div>
 			
 		</div>
@@ -200,11 +200,7 @@
 		}
 	}
 	window.addEventListener('scroll', scroll);
-	window.onclick = function(e){		
-		if (e.target == document.querySelector(".bars_container")){
-			document.querySelector('.bars_container').classList.toggle('show_navbar');
-		};
-	};
+	
 </script>
 </body>
 </html>
