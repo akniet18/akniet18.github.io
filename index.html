@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Портфолио</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href=""/>
+	
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/peppermint.css">
+</head>
+<body>
+	<div class="layer">
+		
+	</div>
+	<header>
+		<div class="nav">
+			<div class="navDiv">
+				<div><a href="">ГЛАВНАЯ</a></div>
+				<div><a href="">РАБОТЫ</a></div>
+				<div><a href="">ТЕХНОЛОГИИ</a></div>
+				<div><a href="">ОБО МНЕ</a></div>
+			</div>
+			
+		</div>
+		<div class="headerText">
+			<h1>Добро пожаловать!</h1>
+			<h2>НА САЙТ-ПОРТФОЛИО HTML-ВЕРСТАЛЬЩИКА</h2>
+			<h2>КУАНЫШ АКНИЕТА</h2>
+		</div>
+	</header>
+	
+	<div class="aboutMe">
+		<div class="about_me_txt">
+			<h1>Что я знаю и умею?</h1>
+			<span>
+			Как HTML и CSS-верстальщик, я умею практически все. Как front end разработчик - не все, но многое. Для того, чтобы вы лучше понимали, что именно я могу вам предложить...
+			</span>
+		</div>
+		<div class="skills">
+			<div class="skills_first">
+				<div class="container">
+					<div>
+						<img src="img/html.png" alt="">
+					</div>
+					<h1>HMTL5 </h1>
+					<span>Семантическая, аккуратная верстка.</span>
+				</div>
+
+				<div class="container">
+					<div>
+						<img src="img/css.png" alt="">
+					</div>
+					<h1>CSS3</h1>
+					<span>Трансформации и перемешения, градиенты, псевдоэлементы и прочие фишечки.</span>
+				</div>
+
+				<div class="container">
+					<div>
+						<img src="img/js.png" alt="">
+					</div>
+					<h1>JavaScript </h1>
+					<span>Достаточно, чтобы понимать и править чужие скрипты и писать свои. В основном в виде jQuery.</span>
+				</div>
+			</div>
+			
+			<div class="skills_two">
+				<div class="container">
+					<div>
+						<img src="img/cross.png" alt="">
+					</div>
+					<h1>Кроссбраузерность... </h1>
+					<span>Доведение вашего сайта до идеала во всех основных браузерах...</span>
+				</div>
+
+				<div class="container"> 
+					<div>
+						<img src="img/responsive.png" alt="">
+					</div>
+					<h1>...и адаптивность  </h1>
+					<span class="res">...и на всех основных мобильных устройствах. Bootstrap, flexbox, grid layout - смотря что подойдет больше!</span>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+
+	<div class="div"> </div>
+
+	<div class="lastWork">
+		<div class="my_sites">
+			<h1 class="lwTitle">Мои последние работы</h1>
+			<div class="my_slides">
+				<div class="slider">
+					<div>
+						1
+					</div>
+					<div>
+						2
+					</div>
+					<div>
+						3
+					</div>
+				</div>
+				<div class="prev">«</div>
+		  		<div class="next">»</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="forMe">
+		
+	</div>
+
+	<footer>	
+		<div class="footer">
+			<div class="addres">
+				<div>РАСПОЛОЖЕНИЕ</div>
+				<span>КАЗАХСТАН г.АЛМАТЫ</span>
+			</div>
+			<div class="soc_network">
+				<div class="soc_network_title">
+					МОИ ДАННЫЕ В СЕТИ
+				</div>
+				<div>
+					<img src="img/vk.png">
+					<img src="img/instagram.png">
+					<img src="img/telega.png">
+					<img src="img/whatsapp.png">
+				</div>
+			</div>	
+		</div>
+			
+	</footer>
+
+<script type="text/javascript" src="js/peppermint.js"></script>
+<script type="text/javascript">
+	var slider = Peppermint(document.querySelector('.slider'), {
+	  dots: true,
+	  slideshow: true,
+	  speed: 500,
+	  slideshowInterval:6000,
+	  stopSlideshowAfterInteraction: true,
+	   cssPrefix: 'peppermint-',
+	  
+	});
+	rightArr = document.querySelector('.next');
+	leftArr = document.querySelector('.prev');
+	rightArr.addEventListener('click', slider.next, false);
+	leftArr.addEventListener('click', slider.prev, false);
+	  
+</script>
+</body>
+</html>

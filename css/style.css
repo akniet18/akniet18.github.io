@@ -1,0 +1,292 @@
+body{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+	overflow-x: hidden;
+}
+
+
+header{
+	width: 100%;
+	height: 100vh;
+	position: relative;
+}
+.layer{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-attachment: fixed;
+	background:url("../img/1.jpg") center no-repeat;
+	background-size: cover;
+	z-index: -1
+}
+.headerText{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #fff;
+}
+.headerText h2, .headerText h1{
+	text-align: center;
+	text-shadow: 0 0 20px rgba(0,0,0,.6)
+}
+.headerText h1{
+	font-size: 3em;	
+	text-transform: uppercase;
+}
+.headerText h2{
+	font-size: 2em;
+}
+
+.nav{
+	position: absolute;
+	top: 0;
+	right: 0;
+	
+	width: 100%;
+	background: rgba(255,255,255,.5);
+}
+.navDiv{
+	display: flex;
+	justify-content: flex-end;
+}
+.navDiv div{
+	padding: 20px;
+}
+.nav a{
+	text-decoration: none;
+	color: #000;
+	position: relative;
+}
+.nav a:before{
+	content: "";
+	position: absolute;
+	bottom: -4px;
+	left: 0;
+	width: 0;
+	background:#000;
+	height: 2px;
+	transition: 1s
+}
+.nav a:hover:before{
+	width: 100%
+}
+
+
+/*-------------------------------------------------------------------------------------------------------------*/
+
+.aboutMe{
+	width: 100%;
+	background:#FAFAFA;
+	padding: 20px 0 40px 0;
+}
+
+
+.about_me_txt{
+	text-align: center;
+	margin-bottom: 20px;
+	width: 90%;
+	margin-left: 5%;
+}
+.about_me_txt span
+{
+	font-size: 1.2em
+}
+.skills{
+	width:90%;
+	margin-left: 5%;
+}
+.skills img{
+	width: 100px;
+	height: 65px;
+}
+.container{
+	background: #fff;
+	box-shadow: 0 0 20px rgba(0,0,0,.5);
+	padding: 20px;
+	transition: 1s
+}
+.container:hover{
+	transform: scale(1.01);
+}
+.container span{
+	font-size: 1.2em
+}
+.container h1{
+	color: #6E0000
+}
+.skills_first, .skills_two{
+	width: 100%;
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+	text-align: center;
+}
+.skills_two{
+	margin-top: 10px;
+}
+.res{
+	width: 80%
+}
+
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+
+.div{
+	width: 100%;
+	height: 50px;
+}
+
+.lastWork{
+	width: 100%;
+	background:#eaf0f8;
+	padding: 20px 0;
+}
+.lwTitle{
+	text-align: center;
+	position: relative;
+}
+.lwTitle:before{
+	content: "";
+	position: absolute;
+	bottom: -5px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 15%;
+	height: 2px;
+	background: #6E0000
+}
+.my_sites{
+	width: 60%;
+	margin: 0 auto;
+	position: relative;
+
+}
+.my_slides{
+	width: 100%;
+	overflow: hidden;
+}
+.slider{
+	width: 100%;
+	position: relative;
+
+}
+.slider div{
+	width: 100%;
+	background: #fff;
+	height: 30vh;
+	text-align: center;
+}
+.prev, .next{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 4rem;
+	color:#6E0000;
+}
+.prev{
+	left: -30px;
+}
+.next{
+	right: -30px;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+footer{
+	width: 100%;
+	position: relative;
+	padding: 10px 0;
+}
+footer:before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.6);
+}
+.footer{
+	position: relative;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 90%;
+	height: auto;
+	display: flex;
+	justify-content: space-between;
+}
+.soc_network{
+	padding: 20px;
+	text-align: center;
+}
+.soc_network_title{
+	font-size: 1.4em;
+	color: #fff;
+	padding: 5px 0;
+}
+.soc_network img{
+	transition: 1s
+}
+.soc_network img:hover{
+	transform: scale(1.1);
+}
+.addres{
+	color:#FFF;
+	padding: 20px;
+}
+.addres div{
+	font-size: 1.4em;
+	padding: 5px 0
+}
+.addres span{
+	font-size: 1.2em
+}
+
+
+
+
+
+@media (max-width: 960px) {
+	.footer{
+		width: 60%;
+		left: 45%
+	}
+
+}
+
+
+
+@media (max-width: 720px) {
+	.footer{
+		width: 70%
+	}
+	.nav{
+		display: none;
+	}
+}
+
+
+@media (max-width: 480px) {
+	.footer{
+		width: 80%;
+		left: 47%
+	}
+	form{
+		padding: 10px;
+	}
+	form textarea{
+		height: 90px;
+	}
+	.container h1 {
+	    font-size: 1.5em
+	}
+}
+
+
+@media (max-width: 320px) {
+	.footer{
+		width: 90%;
+	}
